@@ -48,4 +48,4 @@ Users should be able to:
 ## Author
 
 - Website - OrtalyARTS
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@ortalyarts](https://www.frontendmentor.io/profile/ortalyarts)
