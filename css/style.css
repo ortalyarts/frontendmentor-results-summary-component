@@ -1,0 +1,224 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd, ul {
+  margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  /* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* General STYLE */
+:root {
+
+    --gradient1: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+    --color1: hsl(0, 100%, 67%);
+    --color2: hsl(39, 100%, 56%);
+    --color3: hsl(166, 100%, 37%);
+    --color4: hsl(234, 85%, 45%);
+
+    --colorparagraph: hsl(241, 100%, 89%);
+    --colorparagraph2:#262b4b;
+    --ffparagraph: 'Hanken Grotesk', sans-serif;
+    --fsparagraph: 1.125rem;
+}
+body {
+    padding:0em;
+    font-family: var(--ffparagraph);
+    text-rendering: optimizeSpeed;
+    text-align:left; 
+    background: var(--heading);
+    /* to stick the footer to the bottom */
+    min-height: 100vh; 
+    display:flex; flex-direction:column; 
+}
+h1, h2, h3, ul {
+    padding:0;
+}
+main {
+    overflow:hidden;
+    display:grid;
+    gap: 0rem;
+    max-width: 23.438rem;
+    margin:auto;
+    background:white;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow:0 1.5rem 3rem 0.01rem #eaeef8;
+}
+/* Result */
+.result {
+  background: var(--gradient1);
+  border-radius: 0 0 2rem 2rem;
+  padding:1.5rem 2.4rem;
+  margin:auto;
+}
+.result h1, .result h2, .result h3, .result p {
+  text-align: center;
+}
+h1 {
+  font-size:1.3rem;
+  line-height:2.1rem;
+  color: var(--colorparagraph);
+  font-weight:500;
+}
+.circle {
+  width:8.875rem;
+  height:8.875rem;
+  position:relative;
+  margin: 2rem auto 1.4rem auto;
+  border-radius:50%;
+  background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.circle h2 {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:3.7rem;
+  font-weight:800;
+  color:white;
+  margin:auto;
+}
+.circle h2 span {
+  display:block;
+  color: #877bfb;
+  font-size: var(--fsparagraph);
+  font-weight:500;
+}
+.result p {
+    font-size: var(--fsparagraph);
+    line-height:1.5rem;
+    color: var(--colorparagraph);
+    font-weight:400;
+    padding:0 0 0.5rem 0;
+}
+.result h3 {
+  color:white;
+  font-size: 1.7rem;
+  margin-bottom: 1.4rem;
+  font-weight: 500;
+}
+
+/* Summary */
+.summary {
+  padding:1.5rem;
+}
+.summary h2 {
+  font-size:1.5rem;
+  line-height:2.1rem;
+  color: var(--colorparagraph2);
+  font-weight:700;
+  margin-bottom:1.7rem;
+}
+.summary ul li {
+  list-style: none;
+  display:grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  color:var(--colorparagraph2);
+  border-radius:1rem;
+  padding:1rem;
+  margin:1.125rem 0;
+}
+li.reaction {
+  background:#fff6f5;
+}
+li.reaction p.title {
+  color: var(--color1);
+}
+p.title {
+  font-size:1.1rem;
+}
+li.memory {
+  background:#fffbf2;
+}
+li.memory p.title {
+  color: var(--color2);
+}
+li.verbal {
+  background:#f2fbfa;
+}
+li.verbal p.title {
+  color: var(--color3);
+}
+li.visual {
+  background:#f3f3fd;
+}
+li.visual p.title {
+  color: var(--color4);
+}
+p.score {
+  color: var(--colorparagraph2);
+  font-weight:900;
+  font-size:1.1rem;
+}
+p.score span{
+  color: #9a9a9a;
+}
+button {
+  width:100%;
+  font-family: var(--ffparagraph);
+  color:white;
+  background: var(--colorparagraph2);
+  font-size:1.05rem;
+  line-height:1.5rem;
+  font-weight:400;
+  letter-spacing:0.01rem;
+  padding:0.9rem ;
+  margin-top:0.6rem;
+  outline: none;
+	cursor: pointer;
+  border-radius: 2rem;
+  border: none;
+}
+button:hover {
+  background: var(--gradient1);
+}
+
+footer { font-size: 11px; text-align: center; }
+footer a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width:50rem) {
+  main {
+    grid-template-columns: 1fr 1fr; 
+    max-width:46rem;
+    border-radius:2rem;
+  }
+  body {
+    padding:0 1rem;
+  }
+  .result {
+    border-radius:2rem;
+    padding:2.5rem 3.4rem;
+  }
+  h1 {
+    font-size:1.5rem;
+  }
+  .circle {
+    width:12.5rem;
+    height:12.5rem;
+  }
+  .circle h2 {
+    font-size:4.7rem;
+  }
+  result h3 {
+    font-size: 2rem;
+  }
+  .summary {
+    padding:2.5rem;
+  }
+  button {
+    margin-top:1.6rem;
+  }
+}
