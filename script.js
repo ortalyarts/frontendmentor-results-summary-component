@@ -30,7 +30,7 @@ function listItemsForEach() {
     jsonFile.forEach((item) => {
         el = document.createElement('li');
         el.innerHTML = 
-            '<img src="' + item.icon + '" />' +
+            '<img src="' + item.icon + '" alt="" />' +
             '<p class="title">' + item.category + '</p>' +
             '<p class="score">' + item.score + '<span> / 100</span></p>';
         document.querySelector('.summary ul').appendChild(el);
