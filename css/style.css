@@ -131,31 +131,31 @@ h1 {
   padding:1rem;
   margin:1.125rem 0;
 }
-li.reaction {
+.summary li:nth-child(1) {
   background:#fff6f5;
 }
-li.reaction p.title {
+.summary li:nth-child(1) p.title {
   color: var(--color1);
 }
 p.title {
   font-size:1.1rem;
 }
-li.memory {
+.summary li:nth-child(2) {
   background:#fffbf2;
 }
-li.memory p.title {
+.summary li:nth-child(2) p.title {
   color: var(--color2);
 }
-li.verbal {
+.summary li:nth-child(3) {
   background:#f2fbfa;
 }
-li.verbal p.title {
+.summary li:nth-child(3) p.title {
   color: var(--color3);
 }
-li.visual {
+.summary li:nth-child(4) {
   background:#f3f3fd;
 }
-li.visual p.title {
+.summary li:nth-child(4) p.title {
   color: var(--color4);
 }
 p.score {
